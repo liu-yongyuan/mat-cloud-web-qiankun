@@ -1,16 +1,19 @@
-import React from 'react';
-
 import { Layout } from 'antd';
-
-import './app.less';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const { Header, Content, Footer, Sider } = Layout;
 
-const App: React.FC = () => {
-  console.log(`NODE_ENV=${process.env.NODE_ENV}`);
-  console.log(`BASE_ENV=${process.env.BASE_ENV}`);
-
-  return <Layout></Layout>;
-};
-
-export default App;
+export default function App() {
+  return (
+    <Layout>
+      <Header>Header With Qiankun</Header>
+      <Sider>
+        <NavLink to={'/'}>Root</NavLink>
+        <NavLink to={'/mat-cloud-qiankun-react/books'}>Books With React-Qiankun</NavLink>
+      </Sider>
+      <Content id="mat-cloud-web-qiankun"></Content>
+      <Footer>Footer With Qiankun</Footer>
+    </Layout>
+  );
+}
