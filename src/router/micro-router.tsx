@@ -12,6 +12,10 @@ const router = createBrowserRouter([
         path: '/mat-cloud-qiankun-react/*',
         element: <Empty />,
       },
+      {
+        path: '/mat-cloud-qiankun-vuejs/*',
+        element: <Empty />,
+      },
     ],
   },
 ]);
