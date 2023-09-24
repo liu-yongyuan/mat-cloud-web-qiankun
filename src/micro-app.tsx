@@ -7,6 +7,12 @@ const microAppList = [
     activeRule: '/mat-cloud-qiankun-react',
     container: '#mat-cloud-web-qiankun',
   },
+  {
+    name: 'mat-cloud-qiankun-vuejs',
+    entry: 'http://localhost:3010/',
+    activeRule: '/mat-cloud-qiankun-vuejs',
+    container: '#mat-cloud-web-qiankun', //  同一个容器,进行覆盖
+  },
 ] as RegistrableApp<ObjectType>[];
 
 /**
